@@ -11,6 +11,7 @@ const cors = require('cors');
 app.use(cors());
 
 const io = require('socket.io')(server, { cors: true, origins: ['http://127.0.0.1/'] });
+// const io = require('socket.io')(server);
 
 app.get('/', (req, res) => {
     console.log('requested');
